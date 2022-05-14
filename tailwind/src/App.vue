@@ -14,7 +14,13 @@
     <RouterLink to="/visibility">Visibility</RouterLink>
     <RouterLink to="/zindex">Z-Index</RouterLink>
   </nav>
-
+  <nav>
+    <RouterLink to="/flexdirection">Flexbox Direction</RouterLink>
+    <RouterLink to="/flexwrap">Flexbox Wrap</RouterLink>
+    <RouterLink to="/flexone">Flexbox flex-1</RouterLink>
+    <RouterLink to="/flexorder">Flexbox Order</RouterLink>
+    <RouterLink to="/flexexercise">Flexbox Exercise</RouterLink>
+  </nav>
   <div class="relative flex py-5 items-center">
     <div class="flex-grow border-t border-gray-400"></div>
   </div>
