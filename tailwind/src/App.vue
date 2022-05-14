@@ -11,6 +11,8 @@
     <RouterLink to="/display">Display</RouterLink>
     <RouterLink to="/overflow">Overflow</RouterLink>
     <RouterLink to="/position">Position</RouterLink>
+    <RouterLink to="/visibility">Visibility</RouterLink>
+    <RouterLink to="/zindex">Z-Index</RouterLink>
   </nav>
 
   <div class="relative flex py-5 items-center">

@@ -5,10 +5,22 @@ import BoxSizing from '@/views/BoxSizing.vue'
 import Display from '@/views/Display.vue'
 import Overflow from '@/views/Overflow.vue'
 import PositionDirection from '@/views/PositionDirection.vue'
+import VisibleInvisible from '@/views/VisibleInvisible.vue'
+import ZIndex from '@/views/ZIndex.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
+    {
+      path: '/zindex',
+      name: 'zindex',
+      component: ZIndex
+    },
+    {
+      path: '/visibility',
+      name: 'visibility',
+      component: VisibleInvisible
+    },
     {
       path: '/position',
       name: 'position',
