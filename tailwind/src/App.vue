@@ -4,7 +4,8 @@
 </script>
 
 <template>
-  <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-4 px-4 rounded">Tudo</button>
+  <button class="btn-primary">Primary</button>
+  <button class="btn-danger">Danger</button>
   <div class="w-4 md:w-6 h-4 md:h-6 m-4 bg-green-400 md:bg-green-700"></div>
 </template>
 
