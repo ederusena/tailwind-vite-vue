@@ -4,18 +4,55 @@
 </script>
 
 <template>
-  <button class="btn-primary">Primary</button>
-  <button class="btn-danger">Danger</button>
-  <div class="w-4 md:w-6 h-4 md:h-6 m-4 bg-green-400 md:bg-green-700"></div>
-</template>
+  <nav>
+    <RouterLink to="/">Home</RouterLink>
+    <RouterLink to="/containerex1">Container</RouterLink>
+    <RouterLink to="/boxsizing">Box Sizing</RouterLink>
+    <RouterLink to="/display">Display</RouterLink>
+  </nav>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  <div class="relative flex py-5 items-center">
+    <div class="flex-grow border-t border-gray-400"></div>
+  </div>
+
+  <RouterView />
+</template>
+<style scoped>
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+nav {
+  width: 100%;
+  font-size: 12px;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 2rem;
+}
+
+nav a.router-link-exact-active {
+  color: var(--color-text);
+}
+
+nav a.router-link-exact-active:hover {
+  background-color: transparent;
+}
+
+nav a {
+  display: inline-block;
+  padding: 0 1rem;
+  border-left: 1px solid var(--color-border);
+}
+
+nav a:first-of-type {
+  border: 0;
 }
 </style>
