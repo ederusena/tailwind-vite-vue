@@ -9,6 +9,8 @@
     <RouterLink to="/containerex1">Container</RouterLink>
     <RouterLink to="/boxsizing">Box Sizing</RouterLink>
     <RouterLink to="/display">Display</RouterLink>
+    <RouterLink to="/overflow">Overflow</RouterLink>
+    <RouterLink to="/position">Position</RouterLink>
   </nav>
 
   <div class="relative flex py-5 items-center">

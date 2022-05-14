@@ -3,10 +3,17 @@ import HomeView from '@/views/HomeView.vue'
 import ContainerExOne from '@/views/ContainerExOne.vue'
 import BoxSizing from '@/views/BoxSizing.vue'
 import Display from '@/views/Display.vue'
+import Overflow from '@/views/Overflow.vue'
+import PositionDirection from '@/views/PositionDirection.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
+    {
+      path: '/position',
+      name: 'position',
+      component: PositionDirection
+    },
     {
       path: '/',
       name: 'home',
@@ -26,6 +33,11 @@ const router = createRouter({
       path: '/display',
       name: 'display',
       component: Display
+    },
+    {
+      path: '/overflow',
+      name: 'overflow',
+      component: Overflow
     },
   ]
 })
