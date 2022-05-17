@@ -20,9 +20,22 @@ import GridColumn from '@/views/Grid/GridColumn.vue'
 import GridRowsX from '@/views/Grid/GridRowsX.vue'
 import GridGapX from '@/views/Grid/GridGapX.vue'
 
+import ThemeColor from '@/views/Customizacao/ThemeColor.vue'
+import ThemeScreens from '@/views/Customizacao/ThemeScreens.vue'
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
+    {
+      path: '/themescreens',
+      name: 'themescreens',
+      component: ThemeScreens
+    },
+    {
+      path: '/themecolor',
+      name: 'themecolor',
+      component: ThemeColor
+    },
     {
       path: '/gridgapx',
       name: 'gridgapx',

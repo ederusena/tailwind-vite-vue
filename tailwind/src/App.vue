@@ -31,11 +31,8 @@
   </nav>
 
   <nav>
-    <RouterLink to="/grid">Grid</RouterLink>
-    <RouterLink to="/gridexercise">GridExercise</RouterLink>
-    <RouterLink to="/gridcolumn">Gridcolumn</RouterLink>
-    <RouterLink to="/gridrowsx">GridRowsX</RouterLink>
-    <RouterLink to="/gridgapx">GridGapX</RouterLink>
+    <RouterLink to="/themecolor">ThemeColor</RouterLink>
+    <RouterLink to="/themescreens">ThemeScreens</RouterLink>
   </nav>
 
   <div class="relative flex py-5 items-center">
