@@ -1,21 +1,29 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '@/views/HomeView.vue'
-import ContainerExOne from '@/views/ContainerExOne.vue'
-import BoxSizing from '@/views/BoxSizing.vue'
-import Display from '@/views/Display.vue'
-import Overflow from '@/views/Overflow.vue'
-import PositionDirection from '@/views/PositionDirection.vue'
-import VisibleInvisible from '@/views/VisibleInvisible.vue'
-import ZIndex from '@/views/ZIndex.vue'
-import FlexDirection from '@/views/FlexDirection.vue'
-import FlexWrap from '@/views/FlexWrap.vue'
-import FlexOne from '@/views/FlexOne.vue'
-import FlexOrder from '@/views/FlexOrder.vue'
-import FlexExercise from '@/views/FlexExercise.vue'
+import ContainerExOne from '@/views/TailwindBase/ContainerExOne.vue'
+import BoxSizing from '@/views/TailwindBase/BoxSizing.vue'
+import Display from '@/views/TailwindBase/Display.vue'
+import Overflow from '@/views/TailwindBase/Overflow.vue'
+import PositionDirection from '@/views/TailwindBase/PositionDirection.vue'
+import VisibleInvisible from '@/views/TailwindBase/VisibleInvisible.vue'
+import ZIndex from '@/views/TailwindBase/ZIndex.vue'
+
+import FlexDirection from '@/views/Flexbox/FlexDirection.vue'
+import FlexWrap from '@/views/Flexbox/FlexWrap.vue'
+import FlexOne from '@/views/Flexbox/FlexOne.vue'
+import FlexOrder from '@/views/Flexbox/FlexOrder.vue'
+import FlexExercise from '@/views/Flexbox/FlexExercise.vue'
+
+import Grid from '@/views/Grid/Grid.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
+    {
+      path: '/grid',
+      name: 'grid',
+      component: Grid
+    },
     {
       path: '/flexexercise',
       name: 'flexexercise',
