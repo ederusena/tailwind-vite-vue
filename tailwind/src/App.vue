@@ -24,6 +24,18 @@
 
   <nav>
     <RouterLink to="/grid">Grid</RouterLink>
+    <RouterLink to="/gridexercise">GridExercise</RouterLink>
+    <RouterLink to="/gridcolumn">Gridcolumn</RouterLink>
+    <RouterLink to="/gridrowsx">GridRowsX</RouterLink>
+    <RouterLink to="/gridgapx">GridGapX</RouterLink>
+  </nav>
+
+  <nav>
+    <RouterLink to="/grid">Grid</RouterLink>
+    <RouterLink to="/gridexercise">GridExercise</RouterLink>
+    <RouterLink to="/gridcolumn">Gridcolumn</RouterLink>
+    <RouterLink to="/gridrowsx">GridRowsX</RouterLink>
+    <RouterLink to="/gridgapx">GridGapX</RouterLink>
   </nav>
 
   <div class="relative flex py-5 items-center">
@@ -50,7 +62,7 @@ nav {
   width: 100%;
   font-size: 12px;
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 0.5rem;
 }
 
 nav a.router-link-exact-active {

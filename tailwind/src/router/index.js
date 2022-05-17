@@ -15,10 +15,34 @@ import FlexOrder from '@/views/Flexbox/FlexOrder.vue'
 import FlexExercise from '@/views/Flexbox/FlexExercise.vue'
 
 import Grid from '@/views/Grid/Grid.vue'
+import GridExercise from '@/views/Grid/GridExercise.vue'
+import GridColumn from '@/views/Grid/GridColumn.vue'
+import GridRowsX from '@/views/Grid/GridRowsX.vue'
+import GridGapX from '@/views/Grid/GridGapX.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
+    {
+      path: '/gridgapx',
+      name: 'gridgapx',
+      component: GridGapX
+    },
+    {
+      path: '/gridrowsx',
+      name: 'gridrowsx',
+      component: GridRowsX
+    },
+    {
+      path: '/gridcolumn',
+      name: 'gridcolumn',
+      component: GridColumn
+    },
+    {
+      path: '/gridexercise',
+      name: 'gridexercise',
+      component: GridExercise
+    },
     {
       path: '/grid',
       name: 'grid',
